@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.middleware .child-1 {
+  background: linear-gradient(90deg,#ef9ef3,#af5df6);
+}
+.child-1 {
+  box-shadow: 0 0 20px #15161d;
+  font-size: 120px;
+}
+
+* {
+  font-size: 20px;
+  font-family: "Consolas", monospace;
+  color: #00aa00;
+  overflow: hidden;
+}
+.main-content-section,
+.header {
+  z-index: 2;
+  position: relative;
+}
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  background: linear-gradient(45deg, #010, #333, #010);
+}
+
+section {
+  padding: 1em;
+}
+
+p {
+  font-size: 14px;
+  opacity: 1;
+}
+
+.cursor-box {
+  width: 30em;
+  height: 30em;
+  position: absolute;
+  box-shadow: 0 0 0 10000px #15161d;
+  z-index: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle 471px ,transparent,transparent 50px,#15161d 400px);
+  border-radius: 50%;
+}
+h1 span {
+  font-size: 128px;
+}
+h1 {
+  vertical-align: middle;
+  padding-top: 38px;
+  line-height: 176px;
+}
+
+.cursor-box .cursor-box-child {
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  border-radius: 50%;
+  border: 0;
+  background: radial-gradient(circle 400px at var(--spotlight-x) var(--spotlight-y),transparent,transparent 50px,#15161d 400px);
+}
+.email_inputarea {
+  height: 80px;
+  border-radius: 26px;
+  line-height: 80px;
+  margin: 50px auto;
+  width: 400px;
+}
+.join_emai {
+  font-size: 16px;
+  color: #fff;
+  border-radius: 12px;
+  background-image: linear-gradient(0deg,#606eed,#8267ee);
+  font-weight: 700;
+  box-shadow: 0 -1px 1px hsla(0,0%,100%,.7);
+  opacity: .9;
+  width: 106px;
+  height: 40px;
+  margin-top: 10px;
+  line-height: 40px;
+}
+.greetings {
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  width: 400px;
+  height: 60px;
+  border-radius: 40px;
+}
+.box {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  width: 240px;
+  height: 80px;
+  border-radius: 26px;
+  line-height: 80px;
+  color: #fff;
+  font-size: 27px;
+  margin: 50px auto;
+  background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+}
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.box:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+video,
+h2 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+video {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+h2 {
+
+  text-transform: uppercase;
+  text-align: center;
+  background: white;
+  mix-blend-mode: darken;
+}

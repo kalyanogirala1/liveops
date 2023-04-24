@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="min-h-screen main" id="main">
+      <main className="min-h-screen main md:overflow-hidden overflow-scroll" id="main">
         <div className="header">
           <Image
             src="/logo-dark.svg"
